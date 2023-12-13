@@ -21,8 +21,6 @@ class SoundboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val soundboardViewModel =
-            ViewModelProvider(this).get(SoundboardViewModel::class.java)
 
         _binding = FragmentSoundboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -34,7 +32,7 @@ class SoundboardFragment : Fragment() {
         binding.thankuBtn.text = "Thank you for the person you made of me"
 
         binding.loveuBtn.setOnClickListener { view ->
-            mediaPlayer = MediaPlayer.create(requireContext(), R.raw.astronaut)
+            mediaPlayer = MediaPlayer.create(requireContext(), R.raw.loveu)
             mediaPlayer.start()
             mediaPlayer.setOnCompletionListener {
                 it.release()
@@ -42,7 +40,7 @@ class SoundboardFragment : Fragment() {
         }
 
         binding.missuBtn.setOnClickListener { view ->
-            mediaPlayer = MediaPlayer.create(requireContext(), R.raw.astronaut)
+            mediaPlayer = MediaPlayer.create(requireContext(), R.raw.missu)
             mediaPlayer.start()
             mediaPlayer.setOnCompletionListener {
                 it.release()
@@ -50,7 +48,7 @@ class SoundboardFragment : Fragment() {
         }
 
         binding.bestmomBtn.setOnClickListener { view ->
-            mediaPlayer = MediaPlayer.create(requireContext(), R.raw.astronaut)
+            mediaPlayer = MediaPlayer.create(requireContext(), R.raw.bestmum)
             mediaPlayer.start()
             mediaPlayer.setOnCompletionListener {
                 it.release()
@@ -58,7 +56,7 @@ class SoundboardFragment : Fragment() {
         }
 
         binding.thankuBtn.setOnClickListener { view ->
-            mediaPlayer = MediaPlayer.create(requireContext(), R.raw.astronaut)
+            mediaPlayer = MediaPlayer.create(requireContext(), R.raw.thanks)
             mediaPlayer.start()
             mediaPlayer.setOnCompletionListener {
                 it.release()

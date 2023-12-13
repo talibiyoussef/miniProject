@@ -13,8 +13,6 @@ class ChristianFragment : Fragment() {
 
     private var _binding: FragmentChristianBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -28,7 +26,7 @@ class ChristianFragment : Fragment() {
         _binding = FragmentChristianBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
+        val textView: TextView = binding.textChristian
         christianViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
