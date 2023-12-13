@@ -16,6 +16,7 @@ class SoundboardFragment : Fragment() {
 
     private val binding get() = _binding!!
     var mediaPlayer = MediaPlayer()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
