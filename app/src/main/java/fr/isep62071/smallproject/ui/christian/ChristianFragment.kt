@@ -20,21 +20,14 @@ class ChristianFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val christianViewModel =
-            ViewModelProvider(this).get(ChristianViewModel::class.java)
+
 
         _binding = FragmentChristianBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textChristian
-        christianViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+       textView.setText("func");
         return root
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }
