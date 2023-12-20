@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.christian.WashingMachineFragment">
+    tools:context=".ui.washingMachine.WashingMachineFragment">
 
     <TextView
-        android:id="@+id/text_christian"
+        android:id="@+id/text_washing_machine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -19,4 +19,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_decrease_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-10 seconds"
+        app:layout_constraintTop_toBottomOf="@id/text_washing_machine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

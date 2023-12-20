@@ -16,5 +16,10 @@
             android:id="@+id/nav_soundboard"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_soundboard" />
+
+        <item
+            android:id="@+id/nav_washing_machine"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_washing_machine" />
     </group>
 </menu>
